@@ -4,42 +4,56 @@
     <meta charset="UTF-8">
     <title>Guia Aumiga</title>
     <meta name="description" content="Um Guia Aumiga sobre ONGs, abrigos e clínicas veterinárias em Porto Velho - RO">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/sobre.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="/inicio.html">
-            <img src="img/logo-white.svg"  alt="Guia Aumiga">
-        </a>
         <nav>
+            <a class="imagem_icone" href="/inicio.html">
+                <img src="img/icone.png" alt="ícone da Guia Aumiga"  >
+            </a>
+            
+            <div class="links">
             <a href="/inicio.html">Inicio</a>
             <a href="/sobre.html">Sobre</a>
             <a href="/ongs.html">ONGs</a>
-            <a class="botao-contribuir" href="/contribuir.html" target="_blank">Contribuir</a>
+            <a class="botao-contribuir" href="/contribuir.html" >Contribuir</a>
+            </div>
+  
         </nav>
     </header>
 
-    <main>
-        <section id="sobre">
-            <div id="box">
-                <h2>Sobre a GuiaAumiga</h2>
-                <p class="sobre-guia">A Guia Aumiga foi criada com o propósito de unificar as ONGs de prol animal, abrigos e clínicas veterinárias da cidade de Porto Velho - RO para auxiliar os seus cidadãos a procurarem de forma mais rápida e efetiva sobre esses locais totalmente voltadas a causa animal, assim como eles encontrarão pequenos guias de como podem se voluntariar.</p>
+    <main style="height: 82vh;">
+        <section class="sobre">
+            <div>
+                <h2>Sobre a Guia Aumiga</h2>
+                <p class="sobre-guia">A Guia Aumiga foi criada com o propósito de unificar as ONGs e abrigos de causa animal da cidade de Porto Velho - RO para auxiliar os seus cidadãos a procurarem de forma mais rápida e efetiva sobre esses locais, assim como eles encontrarão pequenos guias de como podem se voluntariar.</p>
             </div>
-            <div id="sobre-texto">
-                <div>
+        </section>
+
+        <section class="sobre-texto">
+            <div class="conteudo-sobre">
+                
+                <div class = "card">
                     <img src="../img/thania.png" alt="Imagem da Thânia" width="200" height="200">
-                    <h3>Thânia Beatriz</h3>
-                    <h4>Fundadora e desenvolvedora da Guia Aumiga</h4>
+                    <div class="card-sobre">
+                        <p class="card-tit">Thânia Beatriz</p>
+                        <p class="card-sub">Fundadora e desenvolvedora da Guia Aumiga</p>
+                    </div>
                 </div>
-                <div>
+                    
+                <div class = "card">
                     <img src="../img/brieta.png" alt="Imagem da Brieta" width="200" height="200">
-                    <h3>Brieta</h3>
-                    <h4>Co-fundadora e inspiradora da Guia Aumiga</h4>
+                    <div class="card-sobre">
+                        <p class="card-tit">Brieta</p>
+                        <p class="card-sub">Co-fundadora e inspiradora da Guia Aumiga</p>
+                    </div>
                 </div>
-            </div>
+                    
+            </div>  
         </section>
     </main>
 
@@ -48,6 +62,18 @@
             Desenvolvido por <a href="https://github.com/thaniabeatriz" target="_blank">Thânia Beatriz</a> para trabalho de conclusão de curso.
         </div>
     </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
     <script src="index.js"></script>
 </body>

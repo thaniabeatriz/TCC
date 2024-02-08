@@ -5,106 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Aumiga</title> 
     <meta name="description" content="Um Guia Aumiga sobre ONGs, abrigos e clínicas veterinárias em Porto Velho - RO">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/inicio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a href="/inicio.html">
-            <img src="img/logo-white.svg"  alt="ícone da Guia Aumiga">
-        </a>
-
         <nav>
+            <a class="imagem_icone" href="/inicio.html">
+                <img src="img/icone.png" alt="ícone da Guia Aumiga, clique para voltar a página inicial."  >
+            </a>
+            
+            <div class="links">
             <a href="/inicio.html">Inicio</a>
             <a href="/sobre.html">Sobre</a>
             <a href="/ongs.html">ONGs</a>
-            <a class="botao-contribuir" href="/contribuir.html" target="_blank" >Contribuir</a>
+            <a class="botao-contribuir" href="/contribuir.html" >Contribuir</a>
+            </div>
+  
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
+        <section class="banner">
             <img src="img/dog2principal.png" alt="Desenho de uma humana brincando com o seu cachorro" width="200" height="200">
             <div id="box">
                 <h1>AUmigo, AUjuda, AUmor</h1>
-                <p class="paragrafo">Aqui você encontrará sobre as ONGs, Abrigos e Clínicas Veterinárias presentes em Porto Velho - Ro, além de textos informativos sobre adoção, castração e como ser um voluntário na causa animal!</p>
+                <p class="paragrafo">Aqui você encontrará sobre as ONGs e Abrigos presentes em Porto Velho - Ro, além de textos informativos sobre adoção, castração e como ser um voluntário na causa animal!</p>
                 <p class="paragrafo-menor">Como posso ajudar uma ONG ou um abrigo?</p>
-                <a class="botao" href="/contribuir.html" target="_blank">Saiba como pode ajudar clicando aqui</a>
+                <a class="botao" href="/contribuir.html" target="_blank">Saiba como pode ajudar</a>
             </div>
             <img src="img/dog1principal.png" alt="Desenho de um humano brincando com o seu cachorro" width="200" height="200">
         </section> 
     </main>
 
-    <div class="container">
-        <div class="card">
-            <img class="imagcard" src="../img/cachorro1.jpg" alt="Cachorro com orelhas longas sorridente para a foto" width="300" height="350">
-            <div class="intro">
-                <h3>Castre</h3>
-                <p class="texto-card">Castrar é cuidar, é garantir que cada vida animal seja vivida com saúde, amor e alegria.</p>
+    <div class="carrossel">
+
+        <div class="papelao">
+            
+            <div class="papelao-sobre">
+                <img  src="../img/cachorro1.jpg" alt="Cachorro com orelhas longas sorridente para a foto" width="300" height="350">
+                <p class="papelao-titulo">Castre</p>                
             </div>
+            <p class="papelao-texto">A castração contribui com o 
+                controle populacional responsável 
+                e assim ajudando a reduzir o 
+                número de animais abandonados 
+                e garantindo uma vida mais 
+                saudável para o seu bichinho</p>
         </div>
-        <div class="card">
+        <div class="papelao">
+            <div class="papelao-sobre">
             <img src="../img/gato1.jpg" alt="Gato laranja sentado perto de uma árvore" width="300" height="350">
-            <div class="intro">
-                <h3>Adote</h3>
-                <p class="texto-card">O ato de adotar é uma jornada cheia de amor, alegria e responsabilidade compartilhada.</p>
+                <p class="papelao-titulo">Adote</p>
+                
             </div>
+        <p class="papelao-texto">O ato de adotar um pet é uma 
+                jornada repleta de amor, alegria e 
+                responsabilidade compartilhada</p>
         </div>
-        <div class="card">
+        <div class="papelao">
+            <div class="papelao-sobre">
             <img src="../img/Cachorro3.jpg" alt="Cachorro com orelhas curtas sorridente para a foto" width="300" height="350">
-            <div class="intro">
-                <h3>Doe</h3>
-                <p class="texto-card">Pequenas doações, grandes impactos. Cada contribuição conta. Faça a diferença hoje.</p>
+                <p class="papelao-titulo">Doe</p>              
             </div>
+        <p class="papelao-texto">Sua contribuição generosa ajuda 
+                a promover o bem-estar dos 
+                animais resgatados e apoiar 
+                iniciativas que promovem um 
+                mundo mais compassivo</p>
         </div>
     </div>
 
     <div class="tabela">
+
+        <p class="linha"></p>
         <h2>Números que causam impacto</h2>
-        <table>
-           <tbody>
-               <tr>
-                   <td>
-                       <img src="icone1.png" alt="Ícone 1">
-                       <p>+5</p>
-                       <p>ONGs e Abrigos</p>
-                   </td>
-                   <td>
-                       <img src="icone2.png" alt="Ícone 2">
-                       <p>+100</p>
-                       <p>Animais Resgatados</p>
-                   </td>
-               </tr>
-               <tr>
-                   <td>
-                       <img src="icone3.png" alt="Ícone 3">
-                       <p>+30</p>
-                       <p>Cachorros disponíveis para adoção</p>
-                   </td>
-                   <td>
-                       <img src="icone4.png" alt="Ícone 4">
-                       <p>+30</p>
-                       <p>Gatos disponíveis para adoção</p>
-                   </td>
-               </tr>
-           </tbody>
-        </table>
+        <section class="tabela-numeros">
+            <div class="conteudo-tabela grid-container">
+                
+                <div class = "card">
+                    <img src="../img/icone1.png" alt="Ícone 1" width="150" height="150" >
+                    <div class="card-sobre" style="margin-left: 25px">
+                        <p class="card-tit">+5</p>
+                        <p class="card-sub">ONGs e Abrigos</p>
+                    </div>
+                </div>
+
+                <div class = "card">
+                    <img src="../img/icone2.png" alt="Ícone 2" width="150" height="150" >
+                    <div class="card-sobre">
+                        <p class="card-tit">+100</p>
+                        <p class="card-sub">Animais Resgatados</p>
+                    </div>
+                </div>
+                
+                <div class = "card">
+                    <img src="../img/icone3.png" alt="Ícone 3" width="150" height="150" >
+                    <div class="card-sobre">
+                        <p class="card-tit">+30</p>
+                        <p class="card-sub">Cachorros disponíveis para adoção</p>
+                    </div>
+                </div>
+
+                <div class = "card">
+                    <img src="../img/icone4.png" alt="Ícone 4" width="150" height="150" >
+                    <div class="card-sobre">
+                        <p class="card-tit">+30</p>
+                        <p class="card-sub">Gatos disponíveis para adoção</p>
+                    </div>
+                </div>     
+            </div>  
+        </section>
+        <p class="linha"></p>
    </div>
 
-   <div class="ultima-secao">
-    <h2>Unidos pelo bem, por eles.</h2>
-    <div class="conteudo">
+   <div class="motivacional">
+    <div class="conteudo"> 
+
+        <div class="texto-class">
+            <div>
+                <p class="titulo">Unidos pelo bem, por eles.</p>
+                <p class="subtitle"> 
+                    Encontre e entre em contato com uma ONG ou um Abrigo, junte-se para proteger, cuidar e dar amor aos animais necessitados.
+                    Ajudar não exige grandezas, mas sim o desejo de fazer a diferença.
+                <p>
+            </div>
+        </div>
+
+        <div class="imagem-cachorro">
+            <img src="img/cachorro2.jpg" width="200" height="200" border-radius: 50%; alt="Cachorros sorrindo">
+        </div>
+
         
-        <div class="texto">
-            
-            <p>Encontre e entre em contato com uma ONG ou um Abrigo, junte-se para proteger, cuidar e dar amor aos animais necessitados.</p>
-            <p>Ajudar não exige grandezas, mas sim o desejo de fazer a diferença.</p>
-        </div>
-        <div class="imagem">
-            <img src="img/cachorro1.jpg" width="200" height="200" border-radius: 50%; alt="Cachorros sorrindo">
-        </div>
     </div>
 </div>
 

@@ -2,24 +2,27 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Guia Aumiga</title> 
-    <meta name="description" content="Um Guia Aumiga sobre ONGs e Abrigos em Porto Velho - RO">
-    <link rel="stylesheet" href="index.css">
+    <title>Guia Aumiga</title>
+    <meta name="description" content="Um Guia Aumiga sobre ONGs, abrigos e clínicas veterinárias em Porto Velho - RO">
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <a href="./inicio.html">
-            <img src="../img/foto.png" alt="Guia Aumiga" width="50" height="50">
-        </a>
         <nav>
-            <a href="./inicio.html">Inicio</a>
-            <a href="./sobre.html">Sobre</a>
-            <a href="./ongs.html">ONGs</a>
-            <a class="botao-contribuir" href="./contribuir.html">Contribuir</a>
+            <a class="imagem_icone" href="/inicio.html">
+                <img src="img/icone.png" alt="ícone da Guia Aumiga"  >
+            </a>
+            
+            <div class="links">
+            <a href="/inicio.html">Inicio</a>
+            <a href="/sobre.html">Sobre</a>
+            <a href="/ongs.html">ONGs</a>
+            <a class="botao-contribuir" href="/contribuir.html" >Contribuir</a>
+            </div>
+  
         </nav>
     </header>
 
@@ -41,7 +44,19 @@
         </div>
     </footer>
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
     <!-- Script para carregar a lista de ONGs e Abrigos -->
-    <script src="./script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
