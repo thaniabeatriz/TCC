@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    height: 82vh;
+}
+
 /* cabeçalho */
 
 header {
@@ -97,7 +101,8 @@ h2 {
     /* topo, direita, baixo, esquerda*/
     padding: 24px 80px 50px 80px;
     position: relative;
-    text-align: center;
+    text-align: left;
+    flex-direction: column;
 }
 
 
@@ -106,6 +111,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    flex-direction: column;
     
 }
 
@@ -121,6 +127,10 @@ h2 {
 
 .card{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
     
 }
 
@@ -142,13 +152,30 @@ h2 {
 
 /* rodapé */
 
-#copyright {
+footer {
     background-color: #263138;
     color: #FFFFFF;
     padding: 24px;
     text-align: center;
 }
 
+#copyright {
+    width: 100%;
+}
+
 #copyright a {
     color: #FF946C;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 12px; 
+    }
+
+    main {
+        height: fit-content ;
+
+    }
 }

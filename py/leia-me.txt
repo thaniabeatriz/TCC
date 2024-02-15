@@ -1,0 +1,4 @@
+#1 Instale o python em seu ambiente.
+#2 Execute "pip install requests" em seu terminal.
+#3 Execute "pip install beautifulsoup4" em seu terminal.
+#4 Execute no terminal o "python main.py" pra executar o script.

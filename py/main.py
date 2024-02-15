@@ -15,7 +15,7 @@ def remove_caracteres_especiais(text):
     return text_sem_caracteres_indesejados
 
 # Função para fazer a pesquisa no google
-def obter_titulos_links(query, limite=8):
+def obter_titulos_links(query, limite=5):
     url = f'https://www.google.com/search?q={query}'
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
@@ -47,7 +47,7 @@ def obter_titulos_links(query, limite=8):
     return resultados
 
 # Informações para o log
-query = "clinicas veterinarias porto velho instagram"
+query = "instagram ong de animais em porto velho"
 hora_inicio = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 # Caminho do arquivo TXT de log
@@ -62,15 +62,11 @@ with open(log_filename, 'a', encoding='utf-8') as log_file:
 resultados = obter_titulos_links(query, limite=8)
 
 # Caminho do arquivo CSV
-csv_filename = "resultados_clinicas_teste.csv"
+csv_filename = "resultados_ongs_abrigos.csv"
 
 # Escreve os resultados no arquivo CSV
 with open(csv_filename, 'w', newline='', encoding='utf-8-sig') as csv_file:
-    fieldnames = ['Titulo', 'Link']
-    writer = csv.DictWriter(csv_file, fieldnames=fieldnames, delimiter=';')
-
-    # Escreve o cabeçalho
-    writer.writeheader()
+    writer = csv.DictWriter(csv_file, fieldnames=['Titulo', 'Link'], delimiter=';')
 
     # Escreve os resultados
     for resultado in resultados:

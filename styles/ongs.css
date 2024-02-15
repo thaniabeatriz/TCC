@@ -14,6 +14,10 @@ body {
     min-height: 100vh;
 }
 
+main {
+    height: 82vh;
+}
+
 /* cabeçalho */
 
 header {
@@ -94,83 +98,6 @@ h2 {
     align-items: center;
 }
 
-/* pagina de inicio, duas fotos e o texto no meio */ 
-
-.banner {
-    display:flex;
-    align-items: center;
-    gap: 32px;
-    /* topo, direita, baixo, esquerda*/
-    padding: 24px 80px 50px 80px;
-    position: relative;
-    text-align: center;
-}
-
-/* pagina de inicio, motivacional */ 
-
-.motivacional {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #F1F1F6;
-}
-
-.motivacional .conteudo {
-    display: flex;
-}
-
-.texto-motivacional {
-    width: 50%;
-}
-
-.texto-class {
-    width:  50%;
-}
-
-.titulo {
-    text-transform: uppercase;
-    font-weight: bold;
-    /* topo, direita, baixo, esquerda*/
-    padding: 20px 80px 20px 250px;
-}
-
-.subtitle {
-    font-style: italic;
-    /* topo, direita, baixo, esquerda*/
-    padding: 20px 80px 20px 250px;
-}
-
-.imagem-cachorro {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-.imagem-cachorro img {
-    border-radius: 50%;
-    width: 20%;
-}
-
-.class {
-    width: 80%;
-}
-
-
-/* rodapé */
-
-#copyright {
-    background-color: #263138;
-    color: #FFFFFF;
-    padding: 24px;
-    text-align: center;
-}
-
-#copyright a {
-    color: #FF946C;
-}
 
 
 /* SOBRE */
@@ -184,51 +111,12 @@ h2 {
     text-align: left;
 }
 
-.sobre-guia{
+.sobre-ongs{
     display:flex;
     text-align: left;
 }
 
-.sobre-texto{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    padding: 20px;
-    
-}
-
-.conteudo-sobre{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.sobre-texto-card{
-    display: flex;
-}
-
-.card{
-    display: flex;
-    
-}
-
-.card-sobre {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.card-tit{
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.card-sub{
-    font-style: italic;
-}
-
-/* ONGS ONGS */
+/* ONGS LISTA */
 
 .ongs{
     display:flex;
@@ -293,3 +181,33 @@ h2 {
     overflow: hidden;
     content: "🐶🐱"
 } 
+
+/* rodapé */
+
+footer {
+    background-color: #263138;
+    color: #FFFFFF;
+    padding: 24px;
+    text-align: center;
+}
+
+#copyright {
+    width: 100%;
+}
+
+#copyright a {
+    color: #FF946C;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 12px; 
+    }
+
+    main {
+        height: fit-content ;
+
+    }
+}
