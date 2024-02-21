@@ -99,7 +99,6 @@ h2 {
 }
 
 
-
 /* SOBRE */
 
 .sobre{
@@ -118,69 +117,58 @@ h2 {
 
 /* ONGS LISTA */
 
-.ongs{
-    display:flex;
-    gap: 32px;
-    /* topo, direita, baixo, esquerda*/
-    padding: 24px 80px 50px 80px;
-    position: relative;
-    text-align: left;
-}
-
-.lista-ongs {
-    list-style: none;
-    padding: 0;
-    margin:0 auto;
+.container-externo {
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height:  100vh; /* Altura mínima igual à altura da viewport */
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3,  1fr);
+    gap:  20px;
+    justify-content: center; 
+    align-items: center; 
 }
 
-.lista-ongs li {
-    position: relative;
-    margin-bottom: 1.5em;
-    padding: 0.5em;
-    border-style: solid;
-    border-color: #E09A79;
-    padding-left: 58px;
-    border-width: 1px;
+.ongs {
+    display: grid;
+    justify-content: center; 
+    align-items: center; 
+    grid-gap:  20px;
+  }
+
+.card {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    
 }
 
-.lista-ongs li:hover{
+.card:hover {
     box-shadow:inset -1em 0 #eff0ff;
     box-shadow: #f0c6ee 0 0 0 3px, transparent 0 0 0 0;
 }
 
-.lista-ongs a {
-    color: #333;
-    text-decoration: none;
-    font-size:15px;
+.icon {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.lista-ongs a:hover {
+.ongs a {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
     color: #007bff;
+}
+
+a:hover {
     text-decoration: underline;
 }
-
-.lista-ongs li:before {
-    position: absolute;
-    top: -0.3em;
-    left: -0.5em;
-    width: 1.8em;
-    height: 1.2em;
-    font-size: 2em;
-    line-height: 1.2;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    background-color: #eff0ff;
-    transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    -webkit-transform: rotate(-20deg);
-    z-index: 99;
-    overflow: hidden;
-    content: "🐶🐱"
-} 
 
 /* rodapé */
 

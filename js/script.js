@@ -6,21 +6,38 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.text())
         .then(csv => {
             const rows = csv.split('\n');
-            const lista = document.createElement('ul');
-            lista.classList.add('lista-ongs');
+            const gridContainer = document.createElement('div');
+            gridContainer.classList.add('conteudo-ongs', 'grid-container');
             rows.forEach(row => {
                 const [title, link] = row.split(';');
                 if (title && link) {
-                    const listItem = document.createElement('li');
-                    const linkElement = document.createElement('a');
-                    linkElement.href = link;
-                    linkElement.textContent = title;
-                    linkElement.target = '_blank';
-                    listItem.appendChild(linkElement);
-                    lista.appendChild(listItem);
+                    const card = createCard(title, link);
+                    gridContainer.appendChild(card);
                 }
             });
-            resultados.appendChild(lista);
+            resultados.appendChild(gridContainer);
         })
         .catch(error => console.error('Error fetching CSV:', error));
 });
+
+function createCard(title, link) {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const icon = document.createElement('div');
+    icon.classList.add('icon');
+    icon.textContent = '🐕'; // Ícone de cachorro
+    card.appendChild(icon);
+
+    const cardTitle = document.createElement('h4');
+    cardTitle.textContent = title;
+    card.appendChild(cardTitle);
+
+    const learnMoreLink = document.createElement('a');
+    learnMoreLink.href = link;
+    learnMoreLink.textContent = 'Saiba mais';
+    learnMoreLink.target = '_blank';
+    card.appendChild(learnMoreLink);
+
+    return card;
+}
