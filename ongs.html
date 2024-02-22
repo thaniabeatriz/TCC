@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <title>Guia Aumiga</title>
     <meta name="description" content="Um Guia Aumiga sobre ONGs, abrigos e clínicas veterinárias em Porto Velho - RO">
-    <link rel="stylesheet" href="/styles/ongs.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles/ongs.css">
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/geral.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <a class="imagem_icone" href="/inicio.html">
-                <img src="img/icone.png" alt="ícone da Guia Aumiga"  >
+            <a class="imagem_icone" href="inicio.html">
+                <img src="img/icone.png" alt="ícone da Guia Aumiga">
             </a>
             
             <div class="links">
-                <a href="/inicio.html">Inicio</a>
-                <a href="/sobre.html">Sobre</a>
-                <a href="/ongs.html">ONGs</a>
-                <a class="botao-contribuir" href="/contribuir.html" >Contribuir</a>
+                <a href="inicio.html">Inicio</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="ongs.html">ONGs</a>
+                <a class="botao-contribuir" href="contribuir.html" >Contribuir</a>
             </div>
         </nav>
     </header>
-
+    <div class="botao-contraste" onclick="contraste()"><i class="bi-brilliance"></i></div>
     <main>
-
         <section class="sobre" style="text-align: center;">
             <div>
                 <h2 style="text-align: center;">Lista de ONGs e Abrigos em Porto Velho - RO</h2>
@@ -45,7 +49,7 @@
         <section class="ongs">
                 <div id="lista-ongs">
                     <div class="conteudo-ongs">
-                        <script src="/js/script.js"></script>
+                        <script src="js/script.js"></script>
                     </div>
                 </div>
         </section>

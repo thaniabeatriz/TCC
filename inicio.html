@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Aumiga</title> 
     <meta name="description" content="Um Guia Aumiga sobre ONGs, abrigos e clínicas veterinárias em Porto Velho - RO">
-    <link rel="stylesheet" href="/styles/inicio.css">
+    
+    <link rel="stylesheet" href="styles/inicio.css">
+    <link rel="stylesheet" href="styles/geral.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/geral.js"></script>
 </head>
 <body>
     <header>
@@ -18,15 +24,15 @@
             </a>
             
             <div class="links">
-            <a href="/inicio.html">Inicio</a>
-            <a href="/sobre.html">Sobre</a>
-            <a href="/ongs.html">ONGs</a>
-            <a class="botao-contribuir" href="/contribuir.html" >Contribuir</a>
+            <a href="inicio.html">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="ongs.html">ONGs</a>
+            <a class="botao-contribuir" href="contribuir.html" >Contribuir</a>
             </div>
   
         </nav>
     </header>
-
+    <div class="botao-contraste" onclick="contraste()"><i class="bi-brilliance"></i></div>
     <main>
         <section class="banner">
             <img src="img/dog2principal.png" alt="Desenho de uma humana brincando com o seu cachorro" width="200" height="200">
@@ -34,7 +40,7 @@
                 <h1>AUmigo, AUjuda, AUmor</h1>
                 <p class="paragrafo">Aqui você encontrará sobre as ONGs e Abrigos presentes em Porto Velho - Ro, além de textos informativos sobre adoção, castração e como ser um voluntário na causa animal!</p>
                 <p class="paragrafo-menor">Como posso ajudar uma ONG ou um abrigo?</p>
-                <a class="botao" href="/contribuir.html" target="_blank">Saiba como pode ajudar</a>
+                <a class="botao" href="contribuir.html" target="_blank">Saiba como pode ajudar</a>
             </div>
             <img src="img/dog1principal.png" alt="Desenho de um humano brincando com o seu cachorro" width="200" height="200">
         </section> 
@@ -45,7 +51,7 @@
         <div class="papelao">
             
             <div class="papelao-sobre">
-                <img  src="../img/cachorro1.jpg" alt="Cachorro com orelhas longas sorridente para a foto" width="300" height="350">
+                <img  src="img/cachorro1.jpg" alt="Cachorro com orelhas longas sorridente para a foto" width="300" height="350">
                 <p class="papelao-titulo">Castre</p>                
             </div>
             <p class="papelao-texto">A castração contribui com o 
@@ -57,7 +63,7 @@
         </div>
         <div class="papelao">
             <div class="papelao-sobre">
-            <img src="../img/gato1.jpg" alt="Gato laranja sentado perto de uma árvore" width="300" height="350">
+            <img src="img/gato1.jpg" alt="Gato laranja sentado perto de uma árvore" width="300" height="350">
                 <p class="papelao-titulo">Adote</p>
                 
             </div>
@@ -67,7 +73,7 @@
         </div>
         <div class="papelao">
             <div class="papelao-sobre">
-            <img src="../img/Cachorro3.jpg" alt="Cachorro com orelhas curtas sorridente para a foto" width="300" height="350">
+            <img src="img/Cachorro3.jpg" alt="Cachorro com orelhas curtas sorridente para a foto" width="300" height="350">
                 <p class="papelao-titulo">Doe</p>              
             </div>
         <p class="papelao-texto">Sua contribuição generosa ajuda 
@@ -86,7 +92,7 @@
             <div class="conteudo-tabela grid-container">
                 
                 <div class = "card">
-                    <img src="../img/icone1.png" alt="Ícone 1" width="150" height="150" >
+                    <img src="img/icone1.png" alt="Ícone 1" width="150" height="150" >
                     <div class="card-sobre" style="margin-left: 25px">
                         <p class="card-tit">+5</p>
                         <p class="card-sub">ONGs e Abrigos</p>
@@ -94,7 +100,7 @@
                 </div>
 
                 <div class = "card">
-                    <img src="../img/icone2.png" alt="Ícone 2" width="150" height="150" >
+                    <img src="img/icone2.png" alt="Ícone 2" width="150" height="150" >
                     <div class="card-sobre">
                         <p class="card-tit">+100</p>
                         <p class="card-sub">Animais Resgatados</p>
@@ -102,7 +108,7 @@
                 </div>
                 
                 <div class = "card">
-                    <img src="../img/icone3.png" alt="Ícone 3" width="150" height="150" >
+                    <img src="img/icone3.png" alt="Ícone 3" width="150" height="150" >
                     <div class="card-sobre">
                         <p class="card-tit">+30</p>
                         <p class="card-sub">Cachorros disponíveis para adoção</p>
@@ -110,7 +116,7 @@
                 </div>
 
                 <div class = "card">
-                    <img src="../img/icone4.png" alt="Ícone 4" width="150" height="150" >
+                    <img src="img/icone4.png" alt="Ícone 4" width="150" height="150" >
                     <div class="card-sobre">
                         <p class="card-tit">+30</p>
                         <p class="card-sub">Gatos disponíveis para adoção</p>
@@ -161,6 +167,6 @@
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
-    <script src="index.js"></script>
+    
 </body>
 </html>
