@@ -119,6 +119,10 @@ a:hover {
     
 }
 
+.sobre-guia {
+    line-height: 150%;
+}
+
 .conteudo-sobre{
     width: 100%;
     display: flex;

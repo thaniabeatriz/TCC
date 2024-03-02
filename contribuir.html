@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Guia Aumiga</title>
     <meta name="description" content="Um Guia Aumiga sobre ONGs, abrigos e clínicas veterinárias em Porto Velho - RO">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/contribuir.css">
+    <link rel="stylesheet" href="styles/botoes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@400;600&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -13,6 +13,8 @@
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/geral.js"></script>
+    <script src="js/aumentar.js"></script>
+    <script src="js/diminuir.js"></script>
 </head>
 
 <body>
@@ -28,27 +30,91 @@
             <a href="ongs.html">ONGs</a>
             <a class="botao-contribuir" href="contribuir.html" >Contribuir</a>
             </div>
-  
         </nav>
     </header>
     <div class="botao-contraste" onclick="contraste()"><i class="bi-brilliance"></i></div>
+    <div class="botao-aumentar" onclick="aumentar()"><i class="bi-zoom-in"></i></div>
+    <div class="botao-diminuir" onclick="diminuir()"><i class="bi-zoom-out"></i></div>
+
     <main>
-        <section id="contribuir">
-            <div id="box">
-                <h2>Como contribuir para a causa animal</h2>
-                <p class="sobre-ongs">Podemos ajudar os animais de algumas formas, confira!</p>
+        <section class="contribuir">
+            <div>
+                <h2>Contribua com a causa animal</h2>
+                <div class= "contribuir-introducao">
+                    <p class="sobre-contribuir">As ONGs realizam muitas ações voltadas para o conforto e segurança dos animais, algumas delas são: resgate, cuidados médicos e castração. Além disso, também atuam no controle populacional
+                        deles, pois quando os cães e gatos não são castrados, pode ocorrer a reprodução de forma desenfreada. Elas possuem muitos desafios para manter o seu funcionamento, como por exemplo, dívidas altas
+                        com clínicas veterinárias e a manunteção diária dos abrigos somada a pouca procura por parte da população para adoção. Dessa forma, a maneira mais eficaz de ajudar essa causa é com o seu suporte!
+                        <strong>Faça parte da proteção aos animais!</strong>
+                    </p>
+                </div>
+                <div class="voluntario">
+                    <div class="texto-vol-din">
+                        <h3>Formas de ação voluntária por meio de seus recursos financeiros</h3>
+                        <ul>
+                            <li>Com apadrinhamento de pet;</li>
+                            <li>Oferecer lar temporário;</li>
+                            <li>Doações como ração, remédios veterinários e acessórios ou em dinheiro para ajudar a custear as dívidas nas clínicas veterinárias;</li>
+                            <li>Socorrer um animal doente ou atropelado;</li>
+                        </ul>
+                    </div>
+                    <img src="img/icone5.png" alt="Desenho de uma humana brincando com o seu cachorro" width="300" height="300"> 
+                </div>
+                <div class="voluntario">
+                    <img src="img/icone6.png" alt="Desenho de uma humana brincando com o seu cachorro" width="400" height="400">
+                    <div class="texto-sem-din">
+                        <h3>Formas de apoio voluntário que não se baseiam em doações em dinheiro</h3>
+                        <ul class="ponto">
+                            <li>Adotar;</li>
+                            <li>Compartilhar as informações sobre as ONGs;</li>
+                            <li>Brincar, passear, dar banho com os animais;</li>
+                            <li>Auxiliar em eventos de adoção ou de arrecadação;</li>
+                            <li>Pode doar aquele acessório pet que não esteja mais utilizando;</li>
+                            <li>Oferecer carona a um protetor voluntário;</li>
+                            <li>Oferecer apoio para cuidar das redes sociais;</li>
+                            <li>Criando uma vaquinha para arrecadar dinheiro para uma ONG;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class = "voluntario">
+                    <div class = "texto-itens-doacao">
+                        <h3>De acordo com o Blog da Cobasi, esses são os itens de doação que as ONGs necessitam:</h3>
+                        <ul>
+                            <li>Ração para cachorro e gato;</li>
+                            <li>Sachês e latas de alimentos úmidos para cães e gatos;</li>
+                            <li>Medicamentos novos e abertos;</li>
+                            <li>Areia higiênica;</li>
+                            <li>Tapete higiênico;</li>
+                            <li>Jornal;</li>
+                            <li>Produtos de limpeza;</li>
+                            <li>Comedouros e bebedouros;</li>
+                            <li>Bandejas e caixas higiênicas para gatos;</li>
+                            <li>Camas e casinhas para cães e gatos;</li>
+                            <li>Brinquedos;</li>
+                            <li>Petiscos e ossinhos;</li>
+                            <li>Roupas e cobertas;</li>
+                            <li>Coleiras, peitorais e guias;</li>
+                            <li>Bolsas e caixas de transporte</li>
+                        </ul>
+                    </div>
+                    <img src="img/icone8.png" alt="Desenho de uma humana brincando com o seu cachorro" width="600" height="600" >
+                </div>
+            </div>
+        </section>
+        <section class="motivacao">
+            <div class="frase-motivacional">
+                <p class="texto-frase-motivacional">
+                    Seja o guardião dos que não têm voz. <br>
+                    <i>Apoie a causa animal e faça a diferença na vida daqueles que nos ensinam sobre o verdadeiro significado do amor incondicional.</i>
+                </p>
             </div>
         </section>
     </main>
 
     <footer>
-        <!-- Conteúdo do rodapé aqui -->
+        <div id="copyright">
+            Desenvolvido por <a href="https://github.com/thaniabeatriz" target="_blank">Thânia Beatriz</a> para trabalho de conclusão de curso.
+        </div>
     </footer>
-
-    <div id="copyright">
-        Desenvolvido por <a href="https://github.com/thaniabeatriz" target="_blank">Thânia Beatriz</a>
-        para trabalho de conclusão de curso.
-    </div>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>

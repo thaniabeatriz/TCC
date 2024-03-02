@@ -1,6 +1,4 @@
 /* página inteira */
-
-
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
@@ -12,10 +10,6 @@ body {
     color: #263138;
     flex-direction: column;
     min-height: 100vh;
-}
-
-main {
-    height: 82vh;
 }
 
 /* cabeçalho */
@@ -43,8 +37,8 @@ header a{
     font-weight: 600;
     padding-right: 10px;
     text-decoration: none;
-    
 }
+
 
 header img {
     height: auto;
@@ -62,10 +56,6 @@ header img {
     text-decoration: none;
     /* vertical e horizontal*/
     padding: 9px 16px;
-}
-
-.botao-contribuir:hover {
-    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
 }
 
 /*texto */
@@ -98,80 +88,82 @@ h2 {
     align-items: center;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 
 /* SOBRE */
 
-.sobre{
+.contribuir{
     display:flex;
     gap: 32px;
     /* topo, direita, baixo, esquerda*/
     padding: 24px 80px 50px 80px;
     position: relative;
     text-align: left;
+    flex-direction: column;
+    
 }
 
-.sobre-ongs{
-    display:flex;
-    text-align: left;
+.sobre-contribuir{
     line-height: 150%;
+    margin-bottom: 32px;
+    
 }
 
-/* ONGS LISTA */
-
-.container-externo {
+.contribuir-introducao{
+    flex: 1;
+    padding-right: 20px;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    min-height:  100vh; /* Altura mínima igual à altura da viewport */
-  }
+    align-items: center;
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3,  1fr);
-    gap:  20px;
-    justify-content: center; 
-    align-items: center; 
 }
 
-.ongs {
-    display: grid;
-    justify-content: center; 
-    align-items: center; 
-    grid-gap:  20px;
-  }
+.voluntario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os elementos filhos quebrem para a próxima linha em telas menores */
+    gap: 20px; /* Adiciona um espaço entre os elementos */
+    padding: 20px; /* Adiciona um espaçamento interno */
+}
 
-.card {
-    width: 300px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+.voluntario img {
+    max-width: 100%; /* Garante que a imagem seja responsiva */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.texto-vol-din,
+.texto-sem-din,
+.texto-itens-doacao {
+    flex: 1; /* Permite que o texto ocupe o espaço restante */
+    max-width: calc(50% - 20px); /* Define a largura máxima para os textos */
+}
+
+.voluntario li {
+    border-left: 5px solid rgb(9, 71, 14);
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+.voluntario h3 {
+    margin-bottom: 20px; /* Adiciona algum espaçamento abaixo do título */
+}
+
+
+.frase-motivacional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    background-color: #F1F1F6;
+}
+
+.frase-motivacional .texto-frase-motivacional {
     text-align: center;
-    transition: 0.3s;
-}
-
-
-
-.card:hover {
-    box-shadow:inset -1em 0 #eff0ff;
-    box-shadow: #f0c6ee 0 0 0 3px, transparent 0 0 0 0;
-}
-
-.icon {
-    font-size: 24px;
-    margin-bottom: 10px;
-    width: 50%;
-}
-
-.ongs a {
-    display: block;
-    margin-top: 15px;
-    text-decoration: none;
-    color: #007bff;
-}
-
-a:hover {
-    text-decoration: underline;
+    bottom: 0; 
+    padding: 20px; 
+    font-size: 25px;
 }
 
 /* rodapé */
@@ -202,10 +194,14 @@ footer {
         height: fit-content ;
 
     }
-    
-    .conteudo-ongs{
-        display: flex;
-        flex-direction: column;
-    }
 
+    .contribuir {
+        flex-direction: column;
+      }
+
+    .texto-vol-din,
+    .texto-sem-din,
+    .texto-itens-doacao {
+          max-width: calc(100% - 40px); /* Define uma largura máxima maior para o texto */
+      }
 }
