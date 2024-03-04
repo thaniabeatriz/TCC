@@ -189,22 +189,29 @@ footer {
     }
 
     nav {
-        width: 100%; /* Alterar a largura do menu para ocupar toda a largura disponível */
-        justify-content: center; /* Centralizar os itens do menu */
-        flex-direction: column; /* Ajustar a direção para coluna */
-        align-items: center; /* Centralizar os itens do menu */
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
-
-    header img {
-        margin-left: 0; /* Remover a margem esquerda da imagem do ícone */
-        margin-bottom: 20px; /* Adicionar espaço abaixo da imagem do ícone */
-    }
-
+    
     .links {
-        margin-bottom: 20px; /* Adicionar espaço abaixo dos links */
+        margin-top: 20px; /* Adiciona espaçamento acima dos links */
+        display: block; /* Garante que os links serão exibidos em colunas */
+        column-count: 2; /* Divide os links em duas colunas */
+        column-gap: 20px; /* Adiciona espaçamento entre as colunas */
+    }
+    
+    .links a {
+        display: block; /* Garante que cada link ocupe toda a largura da coluna */
+        margin-bottom: 10px; /* Adiciona espaçamento entre os links */
+        padding: 10px 0; /* Adiciona preenchimento vertical aos links */
     }
 
     .botao-contribuir {
-        margin-bottom: 20px; /* Adicionar espaço abaixo do botão */
+        background-color: transparent; /* Remove a cor de fundo */
+        border-radius: 0; /* Remove o arredondamento das bordas */
+        color: #ffffff; /* Altera a cor do texto */
+        padding: 8px 15px; /* Ajusta o preenchimento */
     }
 }
