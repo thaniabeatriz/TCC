@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+img {
+     object-fit: cover;
+}
+
 /* cabeçalho */
 
 header {
@@ -101,6 +105,7 @@ a:hover {
     padding: 24px 80px 50px 80px;
     position: relative;
     text-align: center;
+    justify-content: center;
 }
 
 /* carrossel 2 cachorro 1 gato*/ 

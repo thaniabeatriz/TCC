@@ -13,6 +13,9 @@ body {
     min-height: 100vh;
 }
 
+img {
+    object-fit: cover;
+}
 
 
 /* cabeçalho */
