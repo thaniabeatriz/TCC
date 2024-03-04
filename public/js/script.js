@@ -28,7 +28,7 @@ function createCard(title, link) {
 
     const icon = document.createElement('img');
     icon.classList.add('icon');
-    icon.src =  `img/undraw${imgIndex}.webp`
+    icon.src =  `img/undraw${imgIndex}.png`
     icon.textContent = '🐕'; // Ícone de cachorro
     card.appendChild(icon);
 
