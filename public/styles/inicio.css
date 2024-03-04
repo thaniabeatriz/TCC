@@ -358,4 +358,24 @@ footer {
     .linha {
         width: 50%; /* Redimensionar a largura da linha */
     }
+
+    nav {
+        width: 100%; /* Alterar a largura do menu para ocupar toda a largura disponível */
+        justify-content: center; /* Centralizar os itens do menu */
+        flex-direction: column; /* Ajustar a direção para coluna */
+        align-items: center; /* Centralizar os itens do menu */
+    }
+
+    header img {
+        margin-left: 0; /* Remover a margem esquerda da imagem do ícone */
+        margin-bottom: 20px; /* Adicionar espaço abaixo da imagem do ícone */
+    }
+
+    .links {
+        margin-bottom: 20px; /* Adicionar espaço abaixo dos links */
+    }
+
+    .botao-contribuir {
+        margin-bottom: 20px; /* Adicionar espaço abaixo do botão */
+    }
 }
