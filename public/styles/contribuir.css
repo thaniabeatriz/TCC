@@ -106,7 +106,7 @@ a:hover {
     position: relative;
     text-align: left;
     flex-direction: column;
-    
+    width: auto;
 }
 
 .sobre-contribuir{
