@@ -33,7 +33,7 @@ function createCard(title, link) {
     icon.textContent = '🐕'; 
     card.appendChild(icon);
 
-    const cardTitle = document.createElement('h4');
+    const cardTitle = document.createElement('p');
     cardTitle.textContent = title;
     card.appendChild(cardTitle);
 
