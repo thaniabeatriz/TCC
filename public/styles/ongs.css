@@ -165,8 +165,11 @@ h2 {
 .ongs a {
     display: block;
     margin-top: 15px;
+    color: #1100ff;
     text-decoration: none;
-    color: #007bff;
+    background-color: #e1e4ff;
+    border-radius: 50px;
+    width: auto;
 }
 
 a:hover {
