@@ -34,7 +34,7 @@ function definicoesContraste() {
     $("body").css("color","white");
     $(".carrossel").css("background-color","black");
     $(".motivacional").css("background-color","black");
-    $("a").css("color","yellow");
+    $("a").css("color","#EEFF00");
     $(".botao-contraste").css("background-color","#1f6d00");
     $(".botao-contribuir").css("background-color","#ff5b0e"); 
 }
