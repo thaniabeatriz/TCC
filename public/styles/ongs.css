@@ -116,6 +116,7 @@ h2 {
 /* ONGS LISTA */
 
 .container-externo {
+    width: auto;
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
@@ -146,8 +147,6 @@ h2 {
     text-align: center;
     transition: 0.3s;
 }
-
-
 
 .card:hover {
     box-shadow:inset -1em 0 #eff0ff;
