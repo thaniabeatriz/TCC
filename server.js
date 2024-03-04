@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Rota para página inicial
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/pages', 'inicio.html'));
+    res.sendFile(path.join(__dirname, 'public/pages', 'index.html'));
   });
 
 // Rota para página sobre
