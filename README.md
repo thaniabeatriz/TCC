@@ -31,3 +31,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
     <i>npm install</i>
     Isso instalará todas as dependências listadas no arquivo package.json.</p>
 - <p>5º Execute <i>npm start</i> para rodar a aplicação.</p>
+
+## ✍️ Sugestões 
+
+<p>Caso você tenha uma sugestão para o meu projeto, entre em contato comigo através do thaniabeatriz2017@gmail.com</p>
