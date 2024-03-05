@@ -122,6 +122,12 @@ a:hover {
 
 .carrossel {
     background-color: #F1F1F6;
+    gap: 10px;
+}
+
+.papelao {
+    width: 60%;
+    height: auto;
 }
 
 .papelao, .papelao-sobre{
@@ -150,7 +156,6 @@ a:hover {
 
 .papelao-texto{
     font-style: italic;
-    width: 50%;
     text-align: center;
     justify-content: center;
 }
