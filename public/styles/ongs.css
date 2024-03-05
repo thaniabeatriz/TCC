@@ -189,6 +189,10 @@ a:hover {
 /* rodapé */
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #263138;
     color: #FFFFFF;
     padding: 24px;
