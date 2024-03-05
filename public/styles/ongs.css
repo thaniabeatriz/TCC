@@ -193,9 +193,6 @@ footer {
     color: #FFFFFF;
     padding: 24px;
     text-align: center;
-    width: 100vw;
-    position: absolute;
-    bottom:0;
 }
 
 #copyright {
