@@ -192,7 +192,7 @@ a:hover {
 
 .grid-container {
     display: grid;
-    grid-template-columns:  1fr  1fr; /* Cria duas colunas de largura igual */
+    grid-template-columns:  2fr  2fr; /* Cria duas colunas de largura igual */
     grid-template-rows: auto auto; /* Cria duas linhas de altura automática */
     gap:  100px; /* Define o espaçamento entre os itens da grid */
 }
@@ -263,6 +263,8 @@ a:hover {
     border-radius: 50%;
     max-width: 100%; 
     height: auto; 
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .class {
