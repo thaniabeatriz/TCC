@@ -17,6 +17,10 @@ img {
      object-fit: cover;
 }
 
+main { 
+    justify-content: center;
+}
+
 /* cabeçalho */
 
 header {
@@ -79,16 +83,14 @@ h2 {
 }
 
 .paragrafo {
-    line-height: 150%;
     margin-bottom: 32px;
-    align-items: center;
     font-weight: 600;
+    text-align: center;
 }
 
 .paragrafo-menor {
-    line-height: 150%;
     margin-bottom: 32px;
-    align-items: center;
+    text-align: center;
 }
 
 a:hover {
@@ -97,7 +99,20 @@ a:hover {
 
 /* pagina de inicio, duas fotos e o texto no meio */ 
 
-.banner, .carrossel {
+.banner{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.banner a{
+    text-align: center;
+}
+
+.carrossel {
     display:flex;
     align-items: center;
     gap: 32px;
