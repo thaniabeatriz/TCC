@@ -39,7 +39,7 @@ function definicoesContraste() {
     $(".botao-contribuir").css("background-color","#ff5b0e");
     $(".frase-motivacional").css("background-color","#0F0F0F");
     $(".ongs a").css("color","#EEFF00");
-    $(".ongs a").css("background-color","none");
+    $(".ongs a").css("background-color","#0F0F0F");
     $(".header").css("background-color","#0F0F0F");
     $(".card").css("background-color","#0F0F0F");
     $(".papelao-titulo").css("background-color","#0F0F0F");
