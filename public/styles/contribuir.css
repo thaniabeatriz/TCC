@@ -125,10 +125,11 @@ a:hover {
 
 .voluntario {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; 
-    gap: 20px; 
-    padding: 20px; 
+    flex-wrap: wrap; /* Permite que os elementos filhos quebrem para a próxima linha em telas menores */
+    gap: 20px; /* Adiciona um espaço entre os elementos */
+    padding: 20px; /* Adiciona um espaçamento interno */
 }
 
 .voluntario img {
