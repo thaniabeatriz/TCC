@@ -211,6 +211,11 @@ footer {
 @media screen and (max-width: 768px) {
     footer {
         padding: 12px; 
+        background-color: #263138;
+        color: #FFFFFF;
+        padding: 24px;
+        text-align: center;
+        position: relative;
     }
 
     main {
