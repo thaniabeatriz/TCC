@@ -7,7 +7,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 - [HTML]
 - [CSS]
-- [Bootstrap Icons](<https://icons.getbootstrap.com/>)
 - [Javascript](<https://www.javascript.com/>)
 - [Python](<https://www.python.org/>)
 - [Node.js](<https://nodejs.org/en/>)
