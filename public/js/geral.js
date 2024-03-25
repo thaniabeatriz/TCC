@@ -36,7 +36,7 @@ function definicoesContraste() {
     $(".motivacional").css("background-color","#0F0F0F");
     $("a").css("color","#EEFF00");
     $(".botao-contraste").css("background-color","#1f6d00");
-    $(".botao-contribuir").css("background-color","#ff5b0e");
+    $(".botao-contribuir").css("background-color","#222222");
     $(".frase-motivacional").css("background-color","#0F0F0F");
     $(".ongs a").css("color","#EEFF00");
     $(".ongs a").css("background-color","#0F0F0F");
